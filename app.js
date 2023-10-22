@@ -24,9 +24,9 @@ const userRoutes = require('./routes/users');
 const campgroundRoutes = require('./routes/campground');
 const reviewRoutes = require('./routes/reviews');
 
-// const dbURL = process.env.DB_URL;
-
 const dbURL = process.env.DB_URL || "mongodb://127.0.0.1/yelp-camp";
+
+// const dbURL = "mongodb://127.0.0.1/yelp-camp";
 mongoose.connect(dbURL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
